@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import AddNewSoldier from './Pages/AddNewSoldier';
 import SubmitSoldierScore from './Pages/SubmitSoldierScore';
+import AddCourse from './Pages/AddCourse';
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
         <Route
           path='/submitsoldierscore'
           element={ <SubmitSoldierScore /> }
+        />
+        <Route
+          path='/addcourse'
+          element={ <AddCourse /> }
         />
       </Routes>
     </BrowserRouter>
