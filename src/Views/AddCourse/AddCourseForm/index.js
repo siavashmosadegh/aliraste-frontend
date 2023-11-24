@@ -30,7 +30,7 @@ const AddCourseForm = () => {
                 }}
             >
                 {(formik) => (
-                    <Form onSubmit={formik.handleChange}>
+                    <Form onSubmit={formik.handleSubmit}>
                         <div className="firstRow">
                             <Col>
                                 <Field as="select" name="courseTitle" style={{width: "200px",height: "40px",border: "1px solid gray",borderRadius: "10px",textAlign: "right",paddingRight: "15px",fontSize: "20px",fontWeight: "bold"}}>
