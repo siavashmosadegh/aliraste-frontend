@@ -10,18 +10,21 @@ export const PersonalInfoFormSchema = Yup.object().shape({
         .required('وارد کردن این فیلد الزامی است'),
     militaryRank: Yup.string()
         .required('وارد کردن این فیلد الزامی است'),
-    id: Yup.number()
+    id: Yup.string()
         .required('وارد کردن این فیلد الزامی است')
+        .matches(/^[0-9]+$/, 'فقط باید ارقام وارد شود')
         .min(8,'باید ۸ رقم باشد')
         .max(8,'باید ۸ رقم باشد'),
-    expertiseCode: Yup.number()
+    expertiseCode: Yup.string()
         .required('وارد کردن این فیلد الزامی است')
+        .matches(/^[0-9]+$/, 'فقط باید ارقام وارد شود')
         .min(8,'باید ۸ رقم باشد')
         .max(8,'باید ۸ رقم باشد'),
     expertiseName: Yup.string()
         .required('وارد کردن این فیلد الزامی است'),
-    nationalCode: Yup.number()
+    nationalCode: Yup.string()
         .required('وارد کردن این فیلد الزامی است')
+        .matches(/^[0-9]+$/, 'فقط باید ارقام وارد شود')
         .min(8,'باید ۸ رقم باشد')
         .max(8,'باید ۸ رقم باشد'),
     birthCertificateCity: Yup.string()
@@ -31,6 +34,7 @@ export const PersonalInfoFormSchema = Yup.object().shape({
     mobileNumber: Yup.string()
         .matches(mobileRegex,'شماره وارد شده نادرست میباشد')
         .required('وارد کردن این فیلد الزامی است'),
-    sepahBankNumber: Yup.number()
+    sepahBankNumber: Yup.string()
         .required('وارد کردن این فیلد الزامی است')
+        .matches(/^[0-9]+$/, 'فقط باید ارقام وارد شود')
 });
