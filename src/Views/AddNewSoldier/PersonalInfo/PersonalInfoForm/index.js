@@ -101,28 +101,26 @@ const PersonalInfoForm = () => {
                             </Col>
 
                             <Col>
-
-                            <Field as="select" name="militaryRank" style={{width: "200px",height: "40px",border: "1px solid gray",borderRadius: "10px",textAlign: "right",paddingRight: "15px",fontSize: "20px",fontWeight: "bold"}}>
-                                <option value="سرباز">سرباز</option>
-                                <option value="سرباز دوم">سرباز دوم</option>
-                                <option value="سرباز یکم">سرباز یکم</option>
-                                <option value="سرجوخه">سرجوخه</option>
-                                <option value="گروهبان سوم">گروهبان سوم</option>
-                                <option value="گروهبان دوم">گروهبان دوم</option>
-                                <option value="گروهبان اول">گروهبان اول</option>
-                                <option value="ستوان سوم">ستوان سوم</option>
-                                <option value="ستوان دوم">ستوان دوم</option>
-                                <option value="ستوان یکم">ستوان یکم</option>
-                                <option value="سروان">سروان</option>
-                                <option value="سرگرد">سرگرد</option>
-                            </Field>
+                                <Field as="select" name="militaryRank" style={{width: "200px",height: "40px",border: "1px solid gray",borderRadius: "10px",textAlign: "right",paddingRight: "15px",fontSize: "20px",fontWeight: "bold"}}>
+                                    <option value="سرباز">سرباز</option>
+                                    <option value="سرباز دوم">سرباز دوم</option>
+                                    <option value="سرباز یکم">سرباز یکم</option>
+                                    <option value="سرجوخه">سرجوخه</option>
+                                    <option value="گروهبان سوم">گروهبان سوم</option>
+                                    <option value="گروهبان دوم">گروهبان دوم</option>
+                                    <option value="گروهبان اول">گروهبان اول</option>
+                                    <option value="ستوان سوم">ستوان سوم</option>
+                                    <option value="ستوان دوم">ستوان دوم</option>
+                                    <option value="ستوان یکم">ستوان یکم</option>
+                                    <option value="سروان">سروان</option>
+                                    <option value="سرگرد">سرگرد</option>
+                                </Field>
                                 {/* <input      
                                     name="militaryRank"
                                     value={formik.values.militaryRank}
                                     onChange={(e) => FormHandler.onChange(e,formik)}
                                     placeholder="درجه"
                                 /> */}
-
                                 {
                                     formik.errors.militaryRank && formik.touched.militaryRank === true
                                         ?

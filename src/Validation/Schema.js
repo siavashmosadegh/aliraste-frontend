@@ -38,3 +38,35 @@ export const PersonalInfoFormSchema = Yup.object().shape({
         .required('وارد کردن این فیلد الزامی است')
         .matches(/^[0-9]+$/, 'فقط باید ارقام وارد شود')
 });
+
+export const EducationInfoFormSchema = Yup.object().shape({
+    id: Yup.string()
+       .required('وارد کردن این فیلد الزامی است')
+       .matches(/^[0-9]+$/, 'فقط باید ارقام وارد شود')
+       .min(8,'باید ۸ رقم باشد')
+       .max(8,'باید ۸ رقم باشد'),
+    generalScore: Yup.number()
+        .required('وارد کردن این فیلد الزامی است')
+        .max(100, 'نمره باید مساوی یا کوچکتر از ۱۰۰ باشد')
+        .min(0, 'نمره باید بزرگتر یا مساوی صفر باشد'),
+    expertiseScore: Yup.number()
+        .required('وارد کردن این فیلد الزامی است')
+        .max(100, 'نمره باید مساوی یا کوچکتر از ۱۰۰ باشد')
+        .min(0, 'نمره باید بزرگتر یا مساوی صفر باشد'),
+    protectionScore: Yup.number()
+        .required('وارد کردن این فیلد الزامی است')
+        .max(100, 'نمره باید مساوی یا کوچکتر از ۱۰۰ باشد')
+        .min(0, 'نمره باید بزرگتر یا مساوی صفر باشد'),
+    religionScore: Yup.number()
+        .required('وارد کردن این فیلد الزامی است')
+        .max(100, 'نمره باید مساوی یا کوچکتر از ۱۰۰ باشد')
+        .min(0, 'نمره باید بزرگتر یا مساوی صفر باشد')
+})
+
+// id: "", // شماره پرسنلی
+// generalScore: "", // بخش عمومی
+// expertiseScore: "", // بخش تخصص
+// protectionScore: "", // حفاظت
+// religionScore: "", // عقیدتی سیاسی
+// internshipSituation: "", // کارورزی
+// graduationSituation: "" // وضعیت تحصیلی
