@@ -35,6 +35,7 @@ export const Col = styled.div`
     flex-direction: column;
     align-items: center;
     height: 100px;
+    width: 200px;
     margin-right: 20px;
     margin-left: 20px;
 `;
