@@ -6,6 +6,8 @@ import {
 import AddNewSoldier from './Pages/AddNewSoldier';
 import SubmitSoldierScore from './Pages/SubmitSoldierScore';
 import AddCourse from './Pages/AddCourse';
+import Login from './Pages/Login';
+import Main from './Views/Main';
 
 function App() {
   return (
@@ -22,6 +24,14 @@ function App() {
         <Route
           path='/addcourse'
           element={ <AddCourse /> }
+        />
+        <Route
+          path={'/login'}
+          element={ <Login /> }
+        />
+        <Route
+          path={'/main'}
+          element={ <Main /> }
         />
       </Routes>
     </BrowserRouter>

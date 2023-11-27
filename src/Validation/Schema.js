@@ -61,7 +61,13 @@ export const EducationInfoFormSchema = Yup.object().shape({
         .required('وارد کردن این فیلد الزامی است')
         .max(100, 'نمره باید مساوی یا کوچکتر از ۱۰۰ باشد')
         .min(0, 'نمره باید بزرگتر یا مساوی صفر باشد')
-})
+});
+
+export const RegisterLoginSchema = Yup.object().shape({
+    mobile: Yup.string()
+        .matches(mobileRegex,'شماره وارد شده نادرست میباشد')
+        .required('وارد کردن این فیلد الزامی است')
+});
 
 // id: "", // شماره پرسنلی
 // generalScore: "", // بخش عمومی
